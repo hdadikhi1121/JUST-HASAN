@@ -6,11 +6,22 @@ public class Person {
     private String name;
     private String emailAddress;
     private String phoneNumber;
+
+    static ArrayList<Person> persons = new ArrayList<>();
+
+
+    public Person(int id, String name, String emailAddress, String phoneNumber) {
+        this.id = id;
+        this.name = name;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+    }
+
+
     public int getId() {
         return id;
     }
 
-    public static ArrayList<Person> persons = new ArrayList<>();
     public void setId(int id) {
         this.id = id;
     }
@@ -37,11 +48,6 @@ public class Person {
         return "Person [emailAddress=" + emailAddress + ", id=" + id + ", name=" + name + ", phoneNumber=" + phoneNumber
                 + "]";
     }
-    public Person(int id, String name, String emailAddress, String phoneNumber) {
-        this.id = id;
-        this.name = name;
-        this.emailAddress = emailAddress;
-        this.phoneNumber = phoneNumber;
-    }
+
 
 }

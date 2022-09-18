@@ -10,8 +10,11 @@ public class Student {
         this.studentNumber = studentNumber;
         this.averageMark = averageMark;
         this.personId = personId;
+
     } 
+
     public static ArrayList <Student> students = new ArrayList<>();
+
     @Override
     public String toString() {
         return "Student [averageMark=" + averageMark + ", id=" + id + ", personId=" + personId + ", studentNumber="
