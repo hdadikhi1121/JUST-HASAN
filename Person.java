@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+
+
 public class Person {
     private int id ;
     private String name;
@@ -6,6 +9,8 @@ public class Person {
     public int getId() {
         return id;
     }
+
+    public static ArrayList<Person> persons = new ArrayList<>();
     public void setId(int id) {
         this.id = id;
     }
